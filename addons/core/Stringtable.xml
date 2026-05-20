@@ -10,5 +10,13 @@
             <Original>The Rhodesian Rebels are former soldiers, farmers, and loyalists of Rhodesia who have taken up arms against the ruling Zimbabwe African National Union government to reclaim their homeland after the fall of the Rhodesian state following the Rhodesian Bush War.</Original>
         </Key>
 
+        <Key ID="STR_A3UE_params_Rhodesia_CivName">
+            <Original>Rhodesia</Original>
+        </Key>
+
+        <Key ID="STR_A3UE_params_Rhodesia_CivDesc">
+            <Original>The Rhodesian Citizens are civilians of Rhodesia—farmers, workers, and townsfolk—caught between insurgent fighting and the rule of Zimbabwe African National Union following the aftermath of the Rhodesian Bush War.</Original>
+        </Key>
+
     </Package>
 </Project>
