@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="A3-Antistasi">
+    <Package name="A3UE-Rhodesia">
+
+        <Key ID="STR_A3UE_params_Rhodesia_RebName">
+            <Original>Rhodesia</Original>
+        </Key>
+
+        <Key ID="STR_A3UE_params_Rhodesia_RebDesc">
+            <Original>The Rhodesian Rebels are former soldiers, farmers, and loyalists of Rhodesia who have taken up arms against the ruling Zimbabwe African National Union government to reclaim their homeland after the fall of the Rhodesian state following the Rhodesian Bush War.</Original>
+        </Key>
+
+    </Package>
+</Project>
