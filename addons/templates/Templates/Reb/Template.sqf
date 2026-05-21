@@ -1,6 +1,6 @@
 #include "..\..\script_component.hpp"
 
-["name", format [localize "STR_A3UE_params_Rhodesia_RebName", "Rhodesia"]] call _fnc_saveToTemplate;
+["name", format [localize "STR_A3UE_Rhodesia_Templates_Reb_Name", "Rhodesia"]] call _fnc_saveToTemplate;
 ["flag", "Flag_R_R"] call _fnc_saveToTemplate;
 ["flagMarkerType", "A3U_Rhodesia_Reb_Marker"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Asset\Flag_Reb.paa)] call _fnc_saveToTemplate;
