@@ -1,8 +1,8 @@
 #include "script_component.hpp"
 
-class CfgPatches 
+class CfgPatches
 {
-    class ADDON 
+    class ADDON
     {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
@@ -14,7 +14,4 @@ class CfgPatches
     };
 };
 
-class A3A 
-{
-    #include "Templates.hpp"
-};
+#include "CfgMarkers.hpp"
