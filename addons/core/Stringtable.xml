@@ -18,5 +18,14 @@
             <Original>The Rhodesian Citizens are civilians of Rhodesia—farmers, workers, and townsfolk—caught between insurgent fighting and the rule of Zimbabwe African National Union following the aftermath of the Rhodesian Bush War.</Original>
         </Key>
 
+    <Package ID = "A3UE_Rhodesia_Markers">
+        <Key ID = "STR_A3UE_Rhodesia_Markers_Occ_Name">
+            <Original>ZANU</Original>
+        </Key>
+
+        <Key ID="STR_A3UE_params_Rhodesia_OccDesc">
+            <Original>The forces of Zimbabwe African National Union (ZANU) are the ruling nationalist movement of Zimbabwe, formed from guerrilla fighters who won power after the Rhodesian Bush War and now defend their control of the state against Rhodesian insurgents.</Original>
+        </Key>
+
     </Package>
 </Project>
