@@ -152,3 +152,61 @@ private _vehicleAnim = [];
 // /********************************************************\
 // *                        Identity                        *
 // \********************************************************/
+private _face = [];
+private _voice = [];
+private _insignia = [];
+private _insigniaMil = [];
+
+["faces", _face] call _fnc_saveToTemplate;
+["voices", _voice] call _fnc_saveToTemplate;
+["insignia", _insignia] call _fnc_saveToTemplate;
+["milInsignia", _insigniaMil] call _fnc_saveToTemplate;
+
+
+
+// /********************************************************\
+// *                  Loadout & Equipment                   *
+// \********************************************************/
+#include "Units\Common\Loadout.sqf"
+#include "Units\Elite\Loadout.sqf"
+#include "Units\Military\Loadout.sqf"
+#include "Units\Militia\Loadout.sqf"
+#include "Units\Police\Loadout.sqf"
+#include "Units\SpecialForces\Loadout.sqf"
+#include "Units\Misc\Loadout.sqf"
+
+
+
+// /********************************************************\
+// *                       Unit Types                       *
+// \********************************************************/
+private _unitSquadLeader = {};
+private _unitRifleman = {};
+private _unitRadioman = {};
+private _unitMedic = {};
+private _unitGrenadier = {};
+private _unitEE = {};
+private _unitEngineer = {};
+private _unitLAT = {};
+private _unitAT = {};
+private _unitAA = {};
+private _unitMG = {};
+private _unitMarksman = {};
+private _unitSniper = {};
+private _unitPolice = {};
+private _unitCrew = {};
+private _unitUnarmed = {};
+private _unitTraitor = {};
+private _unitOfficer = {};
+
+
+
+// /********************************************************\
+// *                          Unit                          *
+// \********************************************************/
+#include "Units\Elite\Unit.sqf"
+#include "Units\Military\Unit.sqf"
+#include "Units\Militia\Unit.sqf"
+#include "Units\Police\Unit.sqf"
+#include "Units\SpecialForces\Unit.sqf"
+#include "Units\Misc\Unit.sqf"
