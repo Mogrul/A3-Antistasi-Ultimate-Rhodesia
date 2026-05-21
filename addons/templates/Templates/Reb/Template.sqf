@@ -2,7 +2,7 @@
 
 ["name", format [localize "STR_A3UE_params_Rhodesia_RebName", "Rhodesia"]] call _fnc_saveToTemplate;
 ["flag", "Flag_R_R"] call _fnc_saveToTemplate;
-["flagMarkerType", "Flag_R_R"] call _fnc_saveToTemplate;
+["flagMarkerType", "A3U_Rhodesia_Reb_Marker"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Asset\Flag_Reb.paa)] call _fnc_saveToTemplate;
 
 
@@ -22,6 +22,7 @@ private _hasKart = "kart" in A3A_enabledDLC;
 // *                     Mod Check Vars                     *
 // \********************************************************/
 private _hasSNS = isClass (configFile >> "CfgPatches" >> "simc_hillbilly_core");
+private _hasTCGM = isClass (configFile >> "CfgPatches" >> "TCGM_Girls");
 
 
 
@@ -144,20 +145,7 @@ private _vehicleAttribute = [
     // Static
     ["B_G_HMG_02_high_F", ["rebCost", 500]],
     ["B_static_AT_F", ["rebCost", 700]],
-    ["I_G_Mortar_01_F", ["rebCost", 500]],
-
-    // Placeable
-    ["ATMine_Range_Mag", ["rebCost", 200]],
-    ["SLAMDirectionalMine_Wire_Mag", ["rebCost", 200]],
-    ["ClaymoreDirectionalMine_Remote_Mag", ["rebCost", 100]],
-    ["APERSMine_Range_Mag", ["rebCost", 100]],
-    ["APERSBoundingMine_Range_Mag", ["rebCost", 100]],
-    ["APERSTripMine_Wire_Mag", ["rebCost", 100]],
-
-    // Breachers
-    ["DemoCharge_Remote_Mag", ["rebCost", 50]],
-    ["SatchelCharge_Remote_Mag", ["rebCost", 100]],
-    ["DemoCharge_Remote_Mag", ["rebCost", 100]]
+    ["I_G_Mortar_01_F", ["rebCost", 500]]
 ];
 
 if (_hasContact) then {
@@ -237,6 +225,10 @@ private _voice = [
     "Male04ENGB",
     "Male05ENGB"
 ];
+
+if (_hasTCGM) then {
+    #include "..\Common\Modded\TCGM\Identity_Reb.sqf"
+};
 
 ["faces", _face] call _fnc_saveToTemplate;
 ["voices", _voice] call _fnc_saveToTemplate;
