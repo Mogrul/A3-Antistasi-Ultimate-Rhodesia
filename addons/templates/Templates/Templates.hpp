@@ -25,4 +25,14 @@ class Templates
         basepath = QPATHTOFOLDER(Templates\Civ);
         file = "Template";
     };
+
+    class Rhodesia_Occ : Rhodesia_Base
+    {
+        side = "Occ";
+        name = $STR_A3UE_params_Rhodesia_OccName;
+        description = $STR_A3UE_params_Rhodesia_OccDesc;
+        flagTexture = QPATHTOFOLDER(Asset\Flag_Occ.paa);
+        basepath = QPATHTOFOLDER(Templates\Occ);
+        file = "Template";
+    };
 };

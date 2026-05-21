@@ -20,3 +20,5 @@ class A3A
 {
     #include "Templates.hpp"
 };
+
+#include "CfgMarkers.hpp"
