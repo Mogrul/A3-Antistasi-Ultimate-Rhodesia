@@ -1,6 +1,6 @@
 #include "..\..\script_component.hpp"
 
-["name", format [localize "STR_A3UE_Rhodesia_Templates_Reb_Name", "Rhodesia"]] call _fnc_saveToTemplate;
+["name", "Rhodesia"] call _fnc_saveToTemplate;
 ["flag", "Flag_R_R"] call _fnc_saveToTemplate;
 ["flagMarkerType", "A3U_Rhodesia_Reb_Marker"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Asset\Flag_Reb.paa)] call _fnc_saveToTemplate;
@@ -22,7 +22,6 @@ private _hasKart = "kart" in A3A_enabledDLC;
 // *                     Mod Check Vars                     *
 // \********************************************************/
 private _hasSNS = isClass (configFile >> "CfgPatches" >> "simc_hillbilly_core");
-private _hasTCGM = isClass (configFile >> "CfgPatches" >> "TCGM_Girls");
 
 
 
@@ -225,10 +224,6 @@ private _voice = [
     "Male04ENGB",
     "Male05ENGB"
 ];
-
-if (_hasTCGM) then {
-    #include "..\Common\Modded\TCGM\Identity_Reb.sqf"
-};
 
 ["faces", _face] call _fnc_saveToTemplate;
 ["voices", _voice] call _fnc_saveToTemplate;

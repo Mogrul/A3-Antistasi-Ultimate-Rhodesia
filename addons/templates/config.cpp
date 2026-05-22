@@ -7,6 +7,8 @@ class CfgPatches
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {QDOUBLES(PREFIX,core)};
+        units[] = {};
+        weapons[] = {};
         author = AUTHOR;
         authors[] = { AUTHORS };
         authorUrl = "https://mogrul.com";
@@ -16,5 +18,6 @@ class CfgPatches
 
 class A3A 
 {
-    #include "Templates.hpp"
+    #include "Templates\Templates.hpp"
+    #include "AddonVics\AddonVics.hpp"
 };

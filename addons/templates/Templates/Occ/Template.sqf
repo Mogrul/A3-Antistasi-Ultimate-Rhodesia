@@ -1,7 +1,7 @@
 #include "..\..\script_component.hpp"
 
-["name", format [localize "STR_A3UE_Rhodesia_Templates_Occ_Name", "ZANU"]] call _fnc_saveToTemplate;
-["spawnMarkerName", format [localize "STR_A3UE_Rhodesia_Templates_Occ_Name", "ZANU"]] call _fnc_saveToTemplate;
+["name", "ZANU"] call _fnc_saveToTemplate;
+["spawnMarkerName", "ZANU"] call _fnc_saveToTemplate;
 ["flag", "Flag_R_O"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Asset\Flag_Occ.paa)] call _fnc_saveToTemplate;
 ["flagMarkerType", "A3U_Rhodesia_Occ_Marker"] call _fnc_saveToTemplate;
