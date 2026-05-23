@@ -13,7 +13,7 @@ private _hasKart = "kart" in A3A_enabledDLC;
 // *                     Mod Check Vars                     *
 // \********************************************************/
 private _hasSNS = isClass (configFile >> "CfgPatches" >> "simc_hillbilly_core");
-
+private _hasTCGMGirls = isClass (configFile >> "CfgPatches" >> "TCGM_Girls");
 
 
 // /********************************************************\
@@ -116,6 +116,10 @@ private _face = [
     "WhiteHead_31",
     "WhiteHead_32"
 ];
+
+if (_hasTCGMGirls) then {
+    #include "..\Common\Modded\TCGM\Identity_Civ_Reb.sqf"
+};
 
 ["currencySymbol", _currencySymbol] call _fnc_saveToTemplate;
 ["faces", _face] call _fnc_saveToTemplate;

@@ -19,5 +19,4 @@ class CfgPatches
 class A3A 
 {
     #include "Templates\Templates.hpp"
-    #include "AddonVics\AddonVics.hpp"
 };
