@@ -20,3 +20,6 @@ class A3A
 {
     #include "Templates\Templates.hpp"
 };
+
+#include "CfgMarkers.hpp"
+#include "CfgUnitInsignia.hpp"

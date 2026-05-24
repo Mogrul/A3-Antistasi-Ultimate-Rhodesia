@@ -65,7 +65,7 @@
 
     License: MIT License
 */
-#define _LOG_prefix "Antistasi"
+#define _LOG_prefix "Antistasi Rhodesia"
 #define _LOG_newLineIndicator ">>> "
 #define _LOG_newLine (endl + _LOG_newLineIndicator)
 

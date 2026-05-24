@@ -6,7 +6,6 @@
 ["flagTexture", QPATHTOFOLDER(Asset\Flag_Reb.paa)] call _fnc_saveToTemplate;
 
 
-
 // /********************************************************\
 // *                     DLC Check Vars                     *
 // \********************************************************/
@@ -225,6 +224,28 @@ private _voice = [
     "Male05ENGB"
 ];
 
+// THIS MOD ONLY, WILL NOT WORK OUTSIDE, SEE ADDONS/CORE/CFGFUNCTIONS
+private _petrosIdentity = [
+    ["face", "WhiteHead_01"],
+    ["speaker", "Male01ENGB"],
+    ["pitch", 1.1],
+    ["firstName", "Ian"],
+    ["lastName", "Smith"]
+];
+
+if (_hasTCGMGirls) then {
+    petrosIdentity = [
+        ["face", "TCGM_Fem_Gonzalez"],
+        ["speaker", "Male01ENGB"],
+        ["pitch", 2.0],
+        ["firstName", "Patricia"],
+        ["lastName", "Smith"]
+    ];
+};
+
+["petrosIdentity", createHashMapFromArray _petrosIdentity] call _fnc_saveToTemplate;
+//
+
 if (_hasTCGMGirls) then {
     #include "..\Common\Modded\TCGM\Identity_Civ_Reb.sqf"
 };
@@ -236,6 +257,22 @@ if (_hasTCGMGirls) then {
 // /********************************************************\
 // *                       Equipment                        *
 // \********************************************************/
+// THIS MOD ONLY, WILL NOT WORK OUTSIDE, SEE ADDONS/CORE/CFGFUNCTIONS
+private _petrosPrimary = ["arifle_MXM_F", 4];
+private _petrosHandgun = ["hgun_Pistol_heavy_01_F", 5];
+
+private _petrosHeadgear = "H_Cap_marshal";
+private _petrosGoggles = "G_Balaclava_Halloween_01";
+private _petrosUniform = "U_C_Poor_1";
+
+["petrosPrimary", _petrosPrimary] call _fnc_saveToTemplate;
+["petrosHandgun", _petrosHandgun] call _fnc_saveToTemplate;
+["petrosHeadgear", _petrosHeadgear] call _fnc_saveToTemplate;
+["petrosGoggles", _petrosGoggles] call _fnc_saveToTemplate;
+["petrosUniform", _petrosUniform] call _fnc_saveToTemplate;
+
+//
+
 // Military
 private _equipmentGun = ["hgun_PDW2000_F", "hgun_ACPC2_F"];
 private _equipmentAmmo = ["30Rnd_9x21_Mag", "9Rnd_45ACP_Mag"];
